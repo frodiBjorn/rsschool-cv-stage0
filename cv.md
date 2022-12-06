@@ -8,7 +8,7 @@
 
 :phone: *phone:* +7(937)0797025
 
-:cat: github: @frodiBjorn (https://github.com/frodiBjorn)
+:cat: github: [@frodiBjorn] (https://github.com/frodiBjorn)
 
 :bell: discord: Vanny#0411
 
