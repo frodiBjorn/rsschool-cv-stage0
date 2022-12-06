@@ -54,4 +54,5 @@ function isPalindrome(line) {
 ```
 ### Languages:
 :ru: Russian: native
+
 :gb: English: A2-B1
