@@ -52,3 +52,6 @@ function isPalindrome(line) {
   return false;
 }
 ```
+### Languages:
+:ru: Russian: native
+:gb: English: A2-B1
