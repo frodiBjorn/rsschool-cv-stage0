@@ -36,3 +36,8 @@ I am looking into a stack of technologies like this:
 * WebPack
 
 *...And this list is always increase* :new: :+1:
+### Experience:
+**Examples** of my code can be looked at my:
+
+[Codewars](https://www.codewars.com/users/frodi_bjorn) | [GitHub](https://github.com/frodiBjorn)
+------------ | -------------
