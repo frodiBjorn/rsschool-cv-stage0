@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,73 @@
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div>
-        <h1>Hello, world</h1>
+    <header class="header">
+        <h1 class="title header__title">CV</h1>
+        <nav class="navigation">
+            <ul class="list">
+                <li class="list__element"><a href="#about" class="link">About</a></li>
+                <li class="list__element"><a href="" class="link">Skills</a></li>
+                <li class="list__element"><a href="" class="link">Experience</a></li>
+                <li class="list__element"><a href="" class="link">Code</a></li>
+                <li class="list__element"><a href="" class="link">Projects</a></li>
+                <li class="list__element"><a href="" class="link">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="video-wrapper">
+        <video autoplay muted loop id="myVideo">
+            <source src="./assets/typing.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="wrapper">
+        <section id="about" class="about">
+            <p class="about__name">Ivan Fedotovskiy</p>
+            <h2 class="title about__title">I want to become a frontend developer</h2>
+            <p class="about__description">
+                Learning never ends</p>
+        </section>
+    </div>
+    <div class="wrapper">
+        <div class="skills">
+            <h2 class=" title skills__title">My Skills</h2>
+            <div class="cards">
+                <div class="skills-card">
+                    <img class="skills-card__image" src="./assets/skills/html.png" alt="html">
+                    <p class="skills-card__description">HTML</p>
+                </div>
+                <div class="skills-card">
+                    <img class="skills-card__image" src="./assets/skills/sass.png" alt="sass">
+                    <p class="skills-card__description">sass</p>
+                </div>
+                <div class="skills-card">
+                    <img class="skills-card__image" src="./assets/skills/js.png" alt="js">
+                    <p class="skills-card__description">js</p>
+                </div>
+                <div class="skills-card">
+                    <img class="skills-card__image" src="./assets/skills/git.png" alt="git">
+                    <p class="skills-card__description">git</p>
+                </div>
+                <div class="skills-card">
+                    <img class="skills-card__image" src="./assets/skills/physics.png" alt="react">
+                    <p class="skills-card__description">react</p>
+                </div>
+                <div class="skills-card">
+                    <img class="skills-card__image" src="./assets/skills/figma.png" alt="figma">
+                    <p class="skills-card__description">figma</p>
+                </div>
+                <div class="skills-card">
+                    <img class="skills-card__image" src="./assets/skills/visual-studio.png" alt="vs-code">
+                    <p class="skills-card__description">vs code</p>
+                </div>
+                <div class="skills-card ">
+                    <img class="skills-card__image round-image" src="./assets/skills/bem.png" alt="bem">
+                    <p class="skills-card__description">bem</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
