@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -15,8 +18,8 @@
         <nav class="navigation">
             <ul class="list">
                 <li class="list__element"><a href="#about" class="link">About</a></li>
-                <li class="list__element"><a href="" class="link">Skills</a></li>
-                <li class="list__element"><a href="" class="link">Experience</a></li>
+                <li class="list__element"><a href="#skills" class="link">Skills</a></li>
+                <li class="list__element"><a href="#experience" class="link">Experience</a></li>
                 <li class="list__element"><a href="" class="link">Code</a></li>
                 <li class="list__element"><a href="" class="link">Projects</a></li>
                 <li class="list__element"><a href="" class="link">Contacts</a></li>
@@ -37,7 +40,7 @@
         </section>
     </div>
     <div class="wrapper">
-        <div class="skills">
+        <section id="skills" class="skills">
             <h2 class=" title skills__title">My Skills</h2>
             <div class="cards">
                 <div class="skills-card">
@@ -73,7 +76,51 @@
                     <p class="skills-card__description">bem</p>
                 </div>
             </div>
-        </div>
+        </section>
+    </div>
+    <div class="wrapper">
+        <section id="experience" class="experience">
+            <h2 class="title experience__title">Experience</h2>
+            <div class="experience-content">
+                <div class="experience-content-left">
+                    <p class="experience-content__text">In the past, I worked as a hookah man, a counselor in a camp, an
+                        assistant to a system administrator,
+                        a repairman for electronic devices. I always follow the latest news in the technology
+                        world.
+                    </p>
+                    <p class="experience-content__text">But now I`m studying for a frontend developer.</p>
+                    
+                </div>
+                <div class="experience-image">
+                    <div class="photo"></div>
+                    <img class="sertificate" src="./assets/sertificate.jpg" alt="certificate">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="wrapper">
+        <section class="code">
+            <h2 class="title code__title">Code</h2>
+            <div class="examples">
+                <button class="examples__button"><a target="_blank" href="https://www.codewars.com/users/frodibjorn">Codewars</a></button>
+                <button class="examples__button"><a target="_blank" href="https://github.com/frodiBjorn">Github</a></button>
+            </div>
+            <div class="code-example">
+                <pre>
+                    <code>
+                        function nicknameGenerator(name){
+                            const vowels = ['a', 'e', 'i', 'o', 'u'];
+                            if(name.length < 4){return "Error: Name too short"}
+                            if(vowels.includes(name[2])){
+                                return name.slice(0,4)
+                            } 
+                            return name.slice(0,3)
+                        }
+                                             
+                    </code>
+                </pre>
+            </div>
+        </section>
     </div>
 </body>
 
