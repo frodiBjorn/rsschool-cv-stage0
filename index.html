@@ -1,15 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
+
 <body>
-    <div>
-        <h1>Hello, world</h1>
-    </div>
+    <header class="header">
+        <h1 class="title header__title">CV</h1>
+        <nav class="navigation">
+            <ul class="list">
+                <li class="list__element"><a href="#about" class="link">About</a></li>
+                <li class="list__element"><a href="#skills" class="link">Skills</a></li>
+                <li class="list__element"><a href="#experience" class="link">Experience</a></li>
+                <li class="list__element"><a href="#code" class="link">Code</a></li>
+                <li class="list__element"><a href="#projects" class="link">Projects</a></li>
+                <li class="list__element"><a href="#contacts" class="link">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="video-wrapper">
+            <video autoplay muted loop id="myVideo">
+                <source src="./assets/typing.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="wrapper">
+            <div id="about" class="about">
+                <p class="about__name">Ivan Fedotovskiy</p>
+                <h2 class="title about__title">I want to become a frontend developer</h2>
+                <p class="about__description">
+                    Learning never ends</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <section id="skills" class="skills">
+                <h2 class=" title skills__title">My Skills</h2>
+                <ul class="cards">
+                    <li class="skills-card">
+                        <img class="skills-card__image" src="./assets/skills/html.png" alt="html">
+                        <p class="skills-card__description">HTML</p>
+                    </li>
+                    <li class="skills-card">
+                        <img class="skills-card__image" src="./assets/skills/sass.png" alt="sass">
+                        <p class="skills-card__description">sass</p>
+                    </li>
+                    <li class="skills-card">
+                        <img class="skills-card__image" src="./assets/skills/js.png" alt="js">
+                        <p class="skills-card__description">js</p>
+                    </li>
+                    <li class="skills-card">
+                        <img class="skills-card__image" src="./assets/skills/git.png" alt="git">
+                        <p class="skills-card__description">git</p>
+                    </li>
+                    <li class="skills-card">
+                        <img class="skills-card__image" src="./assets/skills/physics.png" alt="react">
+                        <p class="skills-card__description">react</p>
+                    </li>
+                    <li class="skills-card">
+                        <img class="skills-card__image" src="./assets/skills/figma.png" alt="figma">
+                        <p class="skills-card__description">figma</p>
+                    </li>
+                    <li class="skills-card">
+                        <img class="skills-card__image" src="./assets/skills/visual-studio.png" alt="vs-code">
+                        <p class="skills-card__description">vs code</p>
+                    </li>
+                    <li class="skills-card ">
+                        <img class="skills-card__image round-image" src="./assets/skills/bem.png" alt="bem">
+                        <p class="skills-card__description">bem</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="wrapper">
+            <section id="experience" class="experience">
+                <h2 class="title experience__title">Experience</h2>
+                <div class="experience-content">
+                    <div class="experience-content-left">
+                        <div class="education">
+                            <h3 class="experience-content__title">Education:</h3>
+                            <div class="univercity">
+                                <p>Graduated from SSAU</p>
+                                <div class="univercity-logo"></div>
+                            </div>
+                            <div class="language">
+                                <p>My English level is B1-B2</p>
+                                <div class="english"></div>
+                            </div>
+                        </div>
+                        <p class="experience-content__text">In the past, I worked as a repairman for electronic devices. I
+                            always follow the latest news in the technology
+                            world.
+                        </p>
+                        <p class="experience-content__text">But now I`m studying for a frontend developer.</p>
+    
+                    </div>
+                    <div class="experience-image">
+                        <div class="photo"></div>
+                        <img class="sertificate" src="./assets/sertificate.jpg" alt="certificate">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="wrapper">
+            <section id="code" class="code">
+                <h2 class="title code__title">Code</h2>
+                <div class="examples">
+                    <div class="examples__button"><a target="_blank"
+                            href="https://www.codewars.com/users/frodibjorn">Codewars</a></div>
+                    <div class="examples__button"><a target="_blank" href="https://github.com/frodiBjorn">Github</a></div>
+                </div>
+                <div class="code-example">
+                    <pre>
+                        <code>
+                            function nicknameGenerator(name){
+                                const vowels = ['a', 'e', 'i', 'o', 'u'];
+                                if(name.length &lt; 4){return "Error: Name too short"}
+                                if(vowels.includes(name[2])){
+                                    return name.slice(0,4)
+                                } 
+                                return name.slice(0,3)
+                            }
+                                                 
+                        </code>
+                    </pre>
+                </div>
+            </section>
+        </div>
+        <div class="wrapper">
+            <section id="projects" class="projects">
+                <h2 class="title projects__title">Projects</h2>
+                <div class="cards">
+                    <div class="cards__item">
+                        <img src="./assets/projects/museum.png" alt="museum">
+                        <div class="inner">
+                            <h2 class="title">Louvre museum</h2>
+                        </div>
+                        <a href="https://rolling-scopes-school.github.io/frodibjorn-JSFE2021Q3/museum-dom/"
+                            target="_blank"></a>
+                    </div>
+                    <div class="cards__item">
+                        <img src="./assets/projects/momentum.png" alt="momentum">
+                        <a href="https://rolling-scopes-school.github.io/frodibjorn-JSFE2021Q3/momentum/"
+                            target="_blank"></a>
+                        <div class="inner">
+                            <h2 class="title">Momentum site</h2>
+                        </div>
+                    </div>
+                    <div class="cards__item">
+                        <img src="./assets/projects/custom-video-player.png" alt="custom-videoplayer">
+                        <a href="https://rolling-scopes-school.github.io/frodibjorn-JSFEPRESCHOOL/custom-video-player/"
+                            target="_blank"></a>
+                        <div class="inner">
+                            <h2 class="title">Custom video-player</h2>
+                        </div>
+                    </div>
+                    <div class="cards__item">
+                        <img src="./assets/projects/do-nothing.png" alt="clock">
+                        <a href="https://rolling-scopes-school.github.io/frodibjorn-JSFEPRESCHOOL/clock/"
+                            target="_blank"></a>
+                        <div class="inner">
+                            <h2 class="title">Do nothing</h2>
+                        </div>
+                    </div>
+                    <div class="cards__item">
+                        <img src="./assets/projects/colors.png" alt="colors">
+                        <a href="https://frodibjorn.github.io/colorJS/" target="_blank"></a>
+                        <div class="inner">
+                            <h2 class="title">Colors</h2>
+                        </div>
+                    </div>
+                    <div class="cards__item">
+                        <img src="./assets/projects/cards.png" alt="cards">
+                        <a href="https://frodibjorn.github.io/pets/01-cards/" target="_blank"></a>
+                        <div class="inner">
+                            <h2 class="title">Cards</h2>
+                        </div>
+                    </div>
+                    <div class="cards__item">
+                        <img src="./assets/projects/drag-n-drop.png" alt="Drag & Drop">
+                        <a href="https://frodibjorn.github.io/pets/02-drag-n-drop/" target="_blank"></a>
+                        <div class="inner">
+                            <h2 class="title">Drag & Drop</h2>
+                        </div>
+                    </div>
+                    <div class="cards__item">
+                        <img src="./assets/projects/slider.png" alt="slider">
+                        <a href="https://frodibjorn.github.io/pets/03-slider/" target="_blank"></a>
+                        <div class="inner">
+                            <h2 class="title">Slider</h2>
+                        </div>
+                    </div>
+                    <div class="cards__item">
+                        <img src="./assets/projects/game.png" alt="Draw board">
+                        <a href="https://frodibjorn.github.io/pets/04-board/" target="_blank"></a>
+                        <div class="inner">
+                            <h2 class="title">Draw board</h2>
+                        </div>
+                    </div>
+                    <div class="cards__item">
+                        <img src="./assets/projects/aim-game.png" alt="Aim game">
+                        <a href="https://frodibjorn.github.io/pets/05-aim-game/" target="_blank"></a>
+                        <div class="inner">
+                            <h2 class="title">Aim game</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="wrapper">
+            <section id="contacts" class="contacts">
+                <h2 class="title contacts__title">Contacts</h2>
+                <ul class="contacts-content">
+                    <li class="contacts-content__element">
+                        <div class="element__image"><img src="./assets/contacts/gmail.png" alt="email"></div>
+                        <a class="element__link" target="_blank" href="https://www.gmail.com">fedotovsky96@gmail.com</a>
+                    </li>
+                    <li class="contacts-content__element">
+                        <div class="element__image"><img src="./assets/contacts/telephone.png" alt="phone"></div>
+                        <a target="_blank" href="tel:+79370797025">+79370797025</a>
+                    </li>
+                    <li class="contacts-content__element">
+                        <div class="element__image"><img src="./assets/contacts/github.png" alt="github"></div>
+                        <a target="_blank" href="https://github.com/frodiBjorn">@frodiBjorn</a>
+                    </li>
+                    <li class="contacts-content__element">
+                        <div class="element__image"><img src="./assets/contacts/discord.png" alt="discord"></div>
+                        <a href="https://discord.com/app" target="_blank">Vanny#0411</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer__element">
+                <div class="element__image"><img src="./assets/contacts/github.png" alt="github"></div>
+                <a target="_blank" href="https://github.com/frodiBjorn">@frodiBjorn</a>
+            </div>
+            <span class="year">2022</span>
+            <div class="rsschool"><a target="_blank" href="https://rs.school/js/"></a></div>
+        </div>
+    </footer>
 </body>
+
 </html>
